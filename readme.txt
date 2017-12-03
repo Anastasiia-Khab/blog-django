@@ -32,3 +32,4 @@
 #Post.objects.order_by('-created_date')
 #Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 #exit()
+#admin:anastasy email:nastuha97@gmail.com #p:n..kh
