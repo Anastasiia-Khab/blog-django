@@ -1,5 +1,11 @@
 {% extends 'blog/base.html' %}
 
+{% block right %}
+{% if user.is_authenticated %}
+<a href="{% url 'post_edit' pk=post.pk %}" class="top-menu"><span class="glyphicon glyphicon-pencil"></span></a>
+{% endif %}
+{% endblock %}
+
 {% block content %}
 <div class="col-md-10 backgroundmy">
   <div class="col-md-12" >
