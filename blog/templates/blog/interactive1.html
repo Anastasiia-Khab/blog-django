@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <title>Anastasiia's blog</title>
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/funny.css' %}">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div class="background">
+          <i class="icon-spinner"></i>
+          <i class="icon-spinner a"></i>
+          <i class="icon-spinner b"></i>
+          <i class="icon-spinner c"></i>
+          <i class="icon-spinner d"></i>
+          <i class="icon-spinner a alt"></i>
+          <i class="icon-spinner b alt"></i>
+          <i class="icon-spinner c alt"></i>
+          <i class="icon-spinner d alt"></i>
+          <div class="flip-a"></div>
+          <div class="flip-b"></div>
+        </div>
+        <div class="container" id="content" role="main">
+          <h1>Just a trippy background with icon fonts..</h1>
+        </div>
+        <script type="application/javascript">
+            function animatedBG(){
+              $("i").css("font-size","35em").clone().appendTo("body,.flip,flip-b").addClass("rotate,grow").clone().appendTo(".flip-b").addClass("flip-b").addClass("scrunch");
+              $(".flip").css("font-size","25em").addClass("grow").clone().appendTo("flip-b");
+              $(".background").clone().appendTo("body").addClass("grow").clone().appendTo("body").addClass("shrink");
+              $("i").animate({opacity:'1'},2000);
+              $("h1").fadeIn(2000).animate({opacity:'1'},3000).fadeOut(1000);
+            }
+
+            animatedBG();
+        </script>
+    </body>
+</html

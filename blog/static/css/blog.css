@@ -27,6 +27,7 @@
 }
 
 h1, h2, h3, h4 {
+    color: #622569;
     font-family: 'Lobster', cursive;
 }
 
@@ -34,8 +35,10 @@ h1, h2, h3, h4 {
     color: #828282;
 }
 
-.save {
+.save, .save:hover{
     float: right;
+    color: #622569;
+    background-color: #5b9aa0;
 }
 
 .post-form textarea, .post-form input {
